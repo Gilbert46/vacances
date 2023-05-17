@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./www/css/stile.css">
+    <title>Vacances</title>   
+</head>
+<body>
+    <header>
+        <section>
+            <h2>VACANCES</h2>
+        </section>
+        <section>
+            <form> 
+                <h4>INTRODUIR NOVA VACANÇA</h4><br/>
+                <label>Nom:</label><input type="text" id="nom"/><br/><br/>
+                <label>Preu:</label><input type="number" id="preu"/><label> €</label><br/><br/>
+                <label>Hotel:</label><input type="text" id="hotel"/><br/><br/>
+                <label>País:</label><select id="pais">
+                    <option>Tria un pais de la llista ...</option>
+                    <option>Alemania</option>
+                    <option>Argentina</option>
+                    <option>Australia</option>
+                    <option>Bélgica</option>
+                    <option>Brasil</option>
+                    <option>Canadá</option>
+                    <option>Chile</option>
+                    <option>Colombia</option>
+                    <option>Dinamarca</option>
+                    <option>Ecuador</option>
+                    <option>España</option>
+                    <option>Francia</option>
+                    <option>Italia</option>
+                </select><br/><br/><br/>
+                Comentari:<textarea placeholder="" id="descr"></textarea><br/><br/><br/>
+                <input type="button" value="Nova vacança" id="intro" onclick="AddVacanca()"/><br/><br/>
+                <div id="span"></div><br/>
+            </form>
+        </section>
+        <section>
+            <h4>LLISTAT DE TOTES LES VACANCES</h4>
+            <div id="llistat"></div><br/>
+        </section>
+        <section>
+            <h4>DETALL D'UNA VACANÇA CONCRETA</h4>
+            <div id="detall"></div>
+        </section>
+    </header>
+    <script>var exports = {};</script>
+    <script src="./www/app.js"></script>
+</body>
+</html>
+

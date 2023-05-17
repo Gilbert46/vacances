@@ -1,0 +1,54 @@
+*{
+    margin: 0.0155% auto;
+    padding: 1.25%;
+}
+body {
+    background-color:#7673bc;
+}
+header {
+    border-radius: 7%;
+    width: 75%;
+    background-color:navy;
+    color: gold;
+}
+section{   
+    text-align: center; 
+}
+ul{
+    text-align: left;
+    margin-left: 30%;
+    text-decoration: none;
+}
+.newInto:hover{
+    text-decoration: underline;
+    color:white;
+}
+#span {
+    padding: 1.15%;
+    color:red;
+}
+#descr {
+    margin: -20px auto;
+}
+input, textarea, option, select {
+    background-color: #68b850;
+    color: #000000;
+}
+input:hover, textarea:hover, option:hover, select:hover {
+    background: grey;
+    color:yellow;
+}
+#intro {
+    height:40px;
+    font-size: 18px;
+    border-radius: 7%;
+    background: wheat;
+    color: #000000;
+}
+#intro:hover {
+    background: brown;
+    color: whitesmoke;
+}
+@media only screen and (min-width: 1280px) and (max-width:5360px){
+    header {width:50%;}
+}
