@@ -41,7 +41,7 @@ input:hover, textarea:hover, option:hover, select:hover {
 #intro {
     height:40px;
     font-size: 18px;
-    border-radius: 7%;
+    border-radius: 12%;
     background: wheat;
     color: #000000;
 }
@@ -50,5 +50,5 @@ input:hover, textarea:hover, option:hover, select:hover {
     color: whitesmoke;
 }
 @media only screen and (min-width: 1280px) and (max-width:5360px){
-    header {width:50%;}
+    header {width:52%;}
 }
