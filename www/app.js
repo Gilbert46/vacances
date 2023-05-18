@@ -56,7 +56,7 @@ function GetDetallVacanca(id) {
     document.querySelector("#detall").innerHTML = "";
     for (let i = 0; i < vacances.length; i++) {
         if (i + 1 == id) {
-            container += "<ul><li>Nom: " + vacances[i].nom + "</li><li>Preu: " + vacances[i].preu + "</li>";
+            container += "<ul><li>Nom: " + vacances[i].nom + "</li><li>Preu: " + vacances[i].preu + " €</li>";
             container += "<li>Hotel: " + vacances[i].hotel + "</li><li>Pais: " + vacances[i].pais + "</li>";
             if (vacances[i].descr != "")
                 container += "<li>Comentari: " + vacances[i].descr + "</li>";
