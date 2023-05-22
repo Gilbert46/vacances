@@ -6,15 +6,15 @@ let pais = document.querySelector("#pais")! as HTMLInputElement;
 let descri = document.querySelector("#descr")! as HTMLInputElement;
 let cadena: string = "";
 let container: string = "";
-let n: number = 0;
 let vacances: Ivacanca[] = [];
 function AddVacanca(): void {
-    document.querySelector("#span")!.innerHTML = "<style>#nom{background-color:#68b850;} #preu{background-color:#68b850;} #hotel{background-color:#68b850;} #pais{background-color:#68b850;}</style>";
+    document.querySelector("#span")!.innerHTML = "<style>#nom{background-color:#68b850;}#preu{background-color:#68b850;}#hotel{background-color:#68b850;}#pais{background-color:#68b850;}</style>";
     cadena = "!!! falten els següent camps per omplir:";
-    if (nom.value == "" || (nom.value.charAt(0) <= '9' && nom.value.charAt(0) >= '0')) cadena += " nom," + "<style>#nom{background-color:#fa9393;}</style>";
-    if (hotel.value == "" || (hotel.value.charAt(0) <= '9' && hotel.value.charAt(0) >= '0')) cadena += " hotel," + "<style>#hotel{background-color:#fa9393;}</style>";
-    if (preu.value == "" || typeof(preu.valueAsNumber) == "string") cadena += " preu," + "<style>#preu{background-color:#fa9393;}</style>";
-    if (pais.value == "Tria un pais de la llista ...") cadena += " pais." + "<style>#pais{background-color:#fa9393;}</style>";
+    if (nom.value == "" || (nom.value.charAt(0) <= '9' && nom.value.charAt(0) >= '0')) cadena +=" nom,"+"<style>#nom{background-color:#fa9393;}</style>";
+    if (hotel.value == "" || (hotel.value.charAt(0) <= '9' && hotel.value.charAt(0) >= '0')) cadena +=" hotel,"+"<style>#hotel{background-color:#fa9393;}</style>";
+    console.log(preu.value);
+    if (preu.value == "" || preu.valueAsNumber < 0 || preu.valueAsNumber == null) cadena += " preu,"+"<style>#preu{background-color:#fa9393;}</style>";
+    if (pais.value == "Tria un pais de la llista ...") cadena +=" pais."+"<style>#pais{background-color:#fa9393;}</style>";
     if (cadena != "!!! falten els següent camps per omplir:") document.querySelector("#span")!.innerHTML = cadena;
     else {
         let vancaca: Ivacanca = {} as Ivacanca;
